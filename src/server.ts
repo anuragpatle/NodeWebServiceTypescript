@@ -2,9 +2,7 @@
 import http from 'http';
 import express, { Express } from 'express';
 import morgan from 'morgan';
-import routes from './routes/common';
-
-//
+import routes from './routes/common'
 
 
 const router: Express = express();
@@ -16,7 +14,6 @@ router.use(express.urlencoded({ extended: false }));
 /** Takes care of JSON data */
 router.use(express.json());
 
-//   this.app.use(cors());
 
 
 /** RULES OF OUR API */

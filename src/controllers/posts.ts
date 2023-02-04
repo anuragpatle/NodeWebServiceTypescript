@@ -67,7 +67,7 @@ const addPost = async (req: Request, res: Response, next: NextFunction) => {
 	let title: string = req.body.title;
 	let body: string = req.body.body;
 	// add the post
-	let response: AxiosResponse = await axios.post(`https://jsonplaceholder.typicode.com/posts`, {
+	let response: AxiosResponse = await axios.post(`https://mocki.io/v1/a9a48c9f-af92-4336-8ced-394b53a52eed`, {
 		title,
 		body
 	});
